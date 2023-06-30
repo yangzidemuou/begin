@@ -1,7 +1,6 @@
-package com.ruoyi.begin.util;
+package com.ruoyi.begin.utils;
 
 import javax.imageio.ImageIO;
-import javax.imageio.stream.ImageOutputStream;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
