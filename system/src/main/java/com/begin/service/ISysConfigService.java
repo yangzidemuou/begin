@@ -1,8 +1,5 @@
 package com.begin.service;
-
-
 import com.begin.domain.SysConfig;
-
 import java.util.List;
 
 public interface ISysConfigService {

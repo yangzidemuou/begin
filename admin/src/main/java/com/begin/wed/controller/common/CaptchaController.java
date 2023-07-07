@@ -30,10 +30,10 @@ import com.begin.config.RuoYiConfig;
 @RestController
 public class CaptchaController
 {
-    @Resource(name="captchaProducer")
+    @Resource(name = "captchaProducer")
     private Producer captchaProducer;
 
-    @Resource(name="captchaProducerMath")
+    @Resource(name = "captchaProducerMath")
     private Producer captchaProducerMath;
 
     @Autowired
@@ -63,6 +63,7 @@ public class CaptchaController
 
         // 生成验证码
         String captchaType = RuoYiConfig.getCaptchaType();
+
         if ("math".equals(captchaType))
         {
             String capText = captchaProducerMath.createText();
