@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 import javax.annotation.Resource;
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletResponse;
-
 import com.begin.constant.CacheConstants;
 import com.begin.constant.Constants;
 import com.begin.core.domain.AjaxResult;

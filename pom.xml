@@ -3,7 +3,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ruoyi</groupId>
+    <groupId>com.begin</groupId>
     <artifactId>begin</artifactId>
     <version>3.8.5</version>
 
@@ -42,6 +42,13 @@
                 <version>2.5.15</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>3.0.6</version>
+                <scope>test</scope>
             </dependency>
 
             <!-- 阿里数据库连接池 -->
@@ -136,37 +143,37 @@
 
             <!-- 定时任务-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>com.begin</groupId>
                 <artifactId>quartz</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>3.8.5</version>
             </dependency>
 
             <!-- 代码生成-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>com.begin</groupId>
                 <artifactId>generator</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>3.8.5</version>
             </dependency>
 
             <!-- 核心模块-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>com.begin</groupId>
                 <artifactId>framework</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>3.8.5</version>
             </dependency>
 
             <!-- 系统模块-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>com.begin</groupId>
                 <artifactId>system</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>3.8.5</version>
             </dependency>
 
             <!-- 通用工具-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>com.begin</groupId>
                 <artifactId>common</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>3.8.5</version>
             </dependency>
 
         </dependencies>
@@ -179,9 +186,9 @@
         <module>quartz</module>
         <module>generator</module>
         <module>common</module>
+        <module>Test</module>
     </modules>
     <packaging>pom</packaging>
-
     <build>
         <plugins>
             <plugin>

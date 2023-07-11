@@ -1,13 +1,12 @@
 package com.begin.wed.controller;
 
-
-
 import com.begin.constant.Constants;
 import com.begin.core.domain.AjaxResult;
 import com.begin.core.domain.model.LoginBody;
 import com.begin.web.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 
 
 @RestController
@@ -35,6 +34,7 @@ public class LoginController {
         // 生成令牌
         String token = loginService.login(loginBody.getUsername(), loginBody.getPassword(), loginBody.getCode(),
                 loginBody.getUuid());
+
         ajax.put(Constants.TOKEN, token);
         return ajax;
     }
@@ -43,6 +43,7 @@ public class LoginController {
      *
      * @return 用户信息
      */
+
 //    @GetMapping("getInfo")
 //    public AjaxResult getInfo()
 //    {
